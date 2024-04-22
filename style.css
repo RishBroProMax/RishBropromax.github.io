@@ -14,7 +14,7 @@ html,body{
 }
 ::selection{
   color: #fff;
-  background: #1cc7d0;
+  background: #000000;
 }
 .wrapper{
   height: 400px;
