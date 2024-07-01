@@ -60,7 +60,7 @@
         document.getElementById('downloadForm').addEventListener('submit', function(event) {
             event.preventDefault();
             var url = document.getElementById('url').value;
-            fetch('44.226.122.3', {
+            fetch('https://your-backend-server-url.com/download', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -76,6 +76,16 @@
             })
             .catch(error => console.error('Error:', error));
         });
+
+
+
+        fetch('', {
+    method: 'POST',
+    headers: {
+        'Content-Type': 'application/json'
+    },
+    body: JSON.stringify({ url: url })
+})
     </script>
 </body>
 </html>
