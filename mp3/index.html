@@ -60,7 +60,7 @@
         document.getElementById('downloadForm').addEventListener('submit', function(event) {
             event.preventDefault();
             var url = document.getElementById('url').value;
-            fetch('https://54.191.253.12/download', {
+            fetch('https://mp3-backend.onrender.com/download', {
                 method: 'POST',
                 headers: {
                     'Content-Type': 'application/json'
@@ -79,7 +79,7 @@
 
 
 
-        fetch('54.191.253.12/status', {
+        fetch('https://mp3-backend.onrender.com/status', {
     method: 'POST',
     headers: {
         'Content-Type': 'application/json'
