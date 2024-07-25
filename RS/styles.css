@@ -24,6 +24,27 @@ h1 {
     color: #e74c3c;
 }
 
+.typing-text {
+    font-size: 1.2em;
+    margin-bottom: 20px;
+    color: #cccccc;
+    white-space: nowrap;
+    overflow: hidden;
+    border-right: .15em solid orange;
+    width: 0;
+    animation: typing 4s steps(40, end), blink-caret .75s step-end infinite;
+}
+
+@keyframes typing {
+    from { width: 0; }
+    to { width: 100%; }
+}
+
+@keyframes blink-caret {
+    from, to { border-color: transparent; }
+    50% { border-color: orange; }
+}
+
 p {
     font-size: 1.2em;
     margin-bottom: 20px;
@@ -32,6 +53,7 @@ p {
 
 button {
     padding: 10px 20px;
+    margin: 10px;
     font-size: 1em;
     color: #ffffff;
     background: #e74c3c;
