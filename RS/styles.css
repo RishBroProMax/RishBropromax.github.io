@@ -8,6 +8,7 @@ body {
     background: #121212;
     color: #ffffff;
     font-family: 'Arial', sans-serif;
+    overflow: hidden;
 }
 
 .container {
@@ -18,10 +19,18 @@ body {
     box-shadow: 0 0 15px rgba(0, 0, 0, 0.5);
 }
 
-h1 {
-    font-size: 3em;
+.title {
+    font-size: 6em;
     margin-bottom: 20px;
     color: #e74c3c;
+    animation: fadeIn 2s ease-in-out;
+}
+
+.subtitle {
+    font-size: 2em;
+    margin-bottom: 20px;
+    color: #cccccc;
+    animation: fadeIn 3s ease-in-out;
 }
 
 .typing-text {
@@ -45,10 +54,16 @@ h1 {
     50% { border-color: orange; }
 }
 
+@keyframes fadeIn {
+    from { opacity: 0; }
+    to { opacity: 1; }
+}
+
 p {
     font-size: 1.2em;
     margin-bottom: 20px;
     color: #cccccc;
+    animation: fadeIn 4s ease-in-out;
 }
 
 button {
@@ -61,6 +76,7 @@ button {
     border-radius: 5px;
     cursor: pointer;
     transition: background 0.3s;
+    animation: fadeIn 5s ease-in-out;
 }
 
 button:hover {
